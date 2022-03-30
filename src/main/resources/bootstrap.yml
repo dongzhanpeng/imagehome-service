@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: imagehome-service
+  profiles:
+    active: mit
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        group: DEFAULT_GROUP
+        namespace: 4e15716f-5f8e-4b38-9b29-4ca59f15c388
+        file-extension: yaml
+      discovery:
+        server-addr: 127.0.0.1:8848
+        group: DEFAULT_GROUP
+        namespace: 4e15716f-5f8e-4b38-9b29-4ca59f15c388
+      password: nacos
+      username: nacos
